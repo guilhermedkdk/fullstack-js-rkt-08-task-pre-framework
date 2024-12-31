@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-quaternary: #474747;
+  --content-brand: #9282fa;
+
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9282fa;
+  --background-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --title: 700 1.5rem / 133.33% var(--ff-inter-tight);
+
+  --ff-inter: "Inter", sans-serif;
+  --paragraph-medium: 500 0.875rem / 171.43% var(--ff-inter);
+  --paragraph-small: 500 0.75rem / 133.33% var(--ff-inter);
+  --label-large: 700 1rem / 150% var(--ff-inter);
+  --label-medium: 700 0.875rem / 171.43% var(--ff-inter);
+  --label-small: 700 0.75rem / 133.33% var(--ff-inter);
+  --link: 500 0.75rem / 133.33% var(--ff-inter);
+
+  --ff-grotesk: "Familjen Grotesk", sans-serif;
+}
+
+.display-none {
+  display: none;
+}
+
+.blurred {
+  cursor: default;
+
+  pointer-events: none;
+  filter: blur(5px);
+}
+
+body {
+  background-color: #14151d;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+  font: var(--title);
+  color: var(--content-primary);
+}
+
+.paragraph-medium {
+  font: var(--paragraph-medium);
+  color: var(--content-secondary);
+}
+
+.paragraph-small {
+  font: var(--paragraph-small);
+  color: var(--content-secondary);
+}
+
+.label-large {
+  font: var(--label-large);
+}
+
+.label-medium {
+  font: var(--label-medium);
+  color: var(--content-primary);
+}
+
+.label-small {
+  font: var(--label-small);
+  color: var(--content-primary);
+}
+
+.link {
+  font: var(--link);
+}

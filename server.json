@@ -1,0 +1,20 @@
+{
+  "schedules": [
+    {
+      "id": "1725908831205",
+      "owner": "Oliver Sykes",
+      "pet": "Bubbles",
+      "description": "Adestramento",
+      "contact": "(65) 99645-4871",
+      "when": "2024-12-20T13:00:00.000"
+    },
+    {
+      "id": "1725908979214",
+      "owner": "Mike Shinoda",
+      "pet": "Chester",
+      "description": "Banho e tosa",
+      "contact": "(65) 99696-4785",
+      "when": "2024-12-20T19:00:00.000"
+    }
+  ]
+}

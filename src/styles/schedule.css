@@ -1,0 +1,219 @@
+.logo {
+  display: flex;
+
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  gap: 0.25rem;
+
+  border-bottom-right-radius: 0.75rem;
+  background-color: #2e2c30;
+
+  & .logo-title {
+    font: 700 1rem / 150% var(--ff-grotesk);
+    color: #9282fa;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 21.875rem;
+
+  margin-top: 0.625rem;
+  margin-inline: auto;
+
+  & .title-header {
+    margin-bottom: 1.25rem;
+
+    & h1 {
+      margin-top: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+
+    & .schedule-input {
+      display: flex;
+
+      width: fit-content;
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+
+      border-radius: 8px;
+      border: 1px solid var(--border-primary);
+
+      & img {
+        margin-right: 0.5rem;
+      }
+
+      & input {
+        all: unset;
+
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        line-height: 150%;
+
+        color: var(--content-secondary);
+      }
+
+      & input::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        outline: none;
+        background-image: url("../assets/arrow.svg");
+      }
+    }
+  }
+
+  & .schedule {
+    margin-bottom: 2.75rem;
+
+    & .schedule-period {
+      margin-top: 0.75rem;
+
+      border-radius: 10px;
+      background-color: var(--background-tertiary);
+
+      & .schedule-header {
+        display: flex;
+
+        padding: 0.75rem 1.25rem;
+        border-bottom: 1.5px solid #2e2c30;
+
+        & strong {
+          color: var(--content-primary);
+          margin-left: 0.75rem;
+        }
+
+        & span {
+          color: var(--content-secondary);
+          margin-left: auto;
+        }
+      }
+
+      & ul {
+        padding: 1.25rem;
+        list-style-type: none;
+
+        & li + li {
+          border-top: 1px solid #353339;
+        }
+
+        & li {
+          padding: 0.75rem;
+
+          & div {
+            display: flex;
+            align-items: center;
+
+            & .schedule-pet {
+              margin-left: 0.75rem;
+            }
+
+            & .schedule-owner {
+              margin-left: 0.25rem;
+            }
+          }
+
+          & .remove-button {
+            display: flex;
+            cursor: pointer;
+
+            width: fit-content;
+            margin-top: 0.5rem;
+            margin-left: auto;
+
+            border-bottom: 1px solid transparent;
+            background-color: transparent;
+            color: var(--content-tertiary);
+
+            &:hover {
+              color: var(--content-primary);
+              border-bottom: 1px solid var(--content-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+
+  padding-block: 1.125rem;
+  margin-top: auto;
+  background-color: var(--background-tertiary);
+
+  .schedule-button {
+    all: unset;
+    cursor: pointer;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background-color: var(--content-brand);
+
+    font: var(--label-large);
+    color: #050505;
+
+    &:hover {
+      background-color: var(--background-highlights);
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  main {
+    width: 44.4375rem;
+    margin-top: 0.875rem;
+
+    & .title-header {
+      display: flex;
+      justify-content: space-between;
+
+      align-items: center;
+
+      margin-bottom: 0.875rem;
+
+      & h1 {
+        margin-top: 0rem;
+      }
+
+      & .schedule-input {
+        margin-top: 0;
+      }
+    }
+
+    & .schedule {
+      & ul {
+        & li {
+          display: grid;
+          grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 1fr;
+          align-items: center;
+
+          padding: 1rem 0.75rem !important;
+
+          & div {
+            & .schedule-pet {
+              margin-left: 1rem !important;
+            }
+          }
+
+          & .schedule-description {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    justify-content: end;
+    padding-block: 0;
+
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+
+    background-color: transparent;
+  }
+}

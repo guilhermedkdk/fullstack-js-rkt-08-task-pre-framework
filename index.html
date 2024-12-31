@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Mundo Pet</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="logo">
+        <img src="./src/assets/dog.svg" alt="" />
+        <h2 class="logo-title">MUNDO PET</h2>
+      </div>
+
+      <main>
+        <header class="title-header">
+          <div>
+            <h1 class="title">Sua agenda</h1>
+            <p class="paragraph-medium">
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
+          <label class="schedule-input">
+            <img src="./src/assets/calendar.svg" />
+            <input type="date" id="scheduleDate" required />
+          </label>
+        </header>
+
+        <section class="schedule">
+          <div class="schedule-period">
+            <header class="schedule-header">
+              <img src="./src/assets/sun.svg" />
+              <strong class="label-large">Manhã</strong>
+              <span class="label-large">09h-12h</span>
+            </header>
+
+            <ul id="periodMorning"></ul>
+          </div>
+
+          <div class="schedule-period">
+            <header class="schedule-header">
+              <img src="./src/assets/sun-cloud.svg" />
+              <strong class="label-large">Tarde</strong>
+              <span class="label-large">13h-18h</span>
+            </header>
+
+            <ul id="periodAfternoon"></ul>
+          </div>
+
+          <div class="schedule-period">
+            <header class="schedule-header">
+              <img src="./src/assets/moon.svg" />
+              <strong class="label-large">Noite</strong>
+              <span class="label-large">19h-21h</span>
+            </header>
+
+            <ul id="periodNight"></ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <button class="schedule-button">NOVO AGENDAMENTO</button>
+      </footer>
+
+      <div class="form-popup">
+        <form>
+          <img src="src/assets/close.svg" alt="" class="form-close" />
+          <div class="form-wrapper">
+            <header class="form-title">
+              <h1 class="title">Agende um atendimento</h1>
+              <p class="paragraph-medium">
+                Preencha os dados do cliente para realizar o agendamento:
+              </p>
+            </header>
+            <div class="form-inputs">
+              <fieldset>
+                <legend class="label-medium">Nome do dono</legend>
+                <label class="input-inner">
+                  <img src="src/assets/user.svg" alt="" />
+                  <input
+                    type="text"
+                    placeholder="Helena Souza"
+                    id="formOwner"
+                    autocomplete="off"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend class="label-medium">Nome do pet</legend>
+                <label class="input-inner">
+                  <img src="./src/assets/paw.svg" alt="" />
+                  <input
+                    type="text"
+                    placeholder="Cheddar"
+                    id="formPet"
+                    autocomplete="off"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend class="label-medium">Telefone</legend>
+                <label class="input-inner">
+                  <img src="./src/assets/phone.svg" alt="" />
+                  <input
+                    type="text"
+                    placeholder="(00) 0 0000-0000"
+                    id="formPhone"
+                    autocomplete="off"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend class="label-medium">Descrição do serviço</legend>
+                <label class="input-inner">
+                  <input
+                    type="text"
+                    placeholder="Banho e tosa"
+                    class="description-input"
+                    id="formDescription"
+                    autocomplete="off"
+                  />
+                </label>
+              </fieldset>
+
+              <div class="date-inputs">
+                <fieldset>
+                  <legend class="label-medium">Data</legend>
+                  <label class="input-inner">
+                    <img src="src/assets/calendar.svg" alt="" />
+                    <input type="date" id="formDate" autocomplete="off" />
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="label-medium">Hora</legend>
+                  <label class="input-inner" id="formTime">
+                    <img src="./src/assets/clock.svg" alt="" />
+                    <div class="input-time-selected" id="formTimeSelected">
+                      --:--
+                    </div>
+                    <div
+                      class="input-time-selection display-none"
+                      id="formTimeSelection"
+                    ></div>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+
+            <button type="submit">AGENDAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
