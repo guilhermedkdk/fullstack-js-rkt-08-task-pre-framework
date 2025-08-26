@@ -1,4 +1,4 @@
-<h1 align="center">Mundo Pet</h1>
+<h1 align="center">Desafio - Mundo Pet</h1>
 
 <p align= "center">
 Uma aplicação de agendamento de um petshop feita como forma de desafio do curso Fullstack da Rocketseat</p>
@@ -28,6 +28,7 @@ Este projeto foi feito como forma de um desafio dentro do curso de Fullstack no 
 Nele pude consolidar os conhecimentos sobre:
 
 ### JavaScript
+
 - Compiladores
 - Bundlers
 - API
