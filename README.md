@@ -1,12 +1,11 @@
 <h1 align="center">Mundo Pet</h1>
 
 <p align= "center">
-Uma aplicação de agendamento para um petshop feito como forma de desafio do curso Fullstack da Rocketseat</p>
+Uma aplicação de agendamento de um petshop feita como forma de desafio do curso Fullstack da Rocketseat</p>
 
 <p align="center">
 <a href="">🔗 Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#-tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#-desafio">💻 Desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#-aprendizados">📚 Aprendizados</a>
 </p>
 
@@ -22,10 +21,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - Git e Github
 - FIGMA
-
-## 💻 Desafio
-
-O "Mundo Pet" foi um desafio do curso Fullstack da Rocketseat no módulo "JavaScript". Nele, consolidei conhecimentos sobre compiladores, bundlers, criação e consumo de uma API e funções assíncronas, criando uma aplicação dinâmica, interativa e responsiva que armazena e utiliza de seus dados.
 
 ## 📚 Aprendizados
 
